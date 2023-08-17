@@ -1,0 +1,114 @@
+body {
+    background-image: url('images/rushmore.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#title {
+    margin-left: 5px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-left: 5%;
+    align-items: center;
+}
+
+#parent {
+    display: flex;
+    flex-direction: row;
+    margin-right: 200px;
+}
+
+.img {
+    border-style: groove;
+    border-color: white;
+    border-width: 5px;
+    border-radius: 150px;
+}
+
+#johary {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: fixed;
+    left: 17%;
+    top: 15%;
+}
+
+#josh {
+    position: fixed;
+    left: 35%;
+    top: 30%;
+}
+
+#byamungu {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+#jayvon {
+    position: fixed;
+    right: 15%;
+    top: 45%;
+}
+
+#johary_info {
+    position: fixed;
+    left: 20%;
+    top: 50%;
+}
+
+#josh_info {
+    position: fixed;
+    left: 37.5%;
+    top: 60%;
+}
+
+#byamungu_info {
+    position: fixed;
+    left: 52.5%;
+    top: 37.5%;
+}
+
+#jayvon_info {
+    position: fixed;
+    right: 18.5%;
+    top: 32.5%;
+}
+
+.information {
+    background-color: rgb(214, 145, 214);
+    border-style: solid;
+    border-color: purple;
+    border-width: 3px;
+    text-align: center;
+    visibility: hidden;
+    padding: 3px;
+    opacity: 0.0;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1; /* Initial opacity (fully visible) */
+    transition: opacity 1s ease-in-out;
+}
+
+.select {
+    border-color: purple;
+}
+
+#logo {
+    margin: 10px;
+    border-style: groove;
+    border-width: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}

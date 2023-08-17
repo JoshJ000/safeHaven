@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hobby Generator</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ; type="text/javascript"></script>
+    <script src="hobby.js" defer></script>
+    <link rel="stylesheet" href="hobby.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        
+    </div>
+    <div id="cont">
+        <a href="home.html"><img id="logo" src="images/logo.png" width="125px"></a>
+        <p>Hobbies are a great way to spend your time productively.</p>
+        <p>You can not only enrich yourself, but meet others through common interests!</p>
+        <p>It's important to keep in mind that hobbies require time/effort to grow, but don't let that intimidate you!</p>
+        <p>Commit, dare greatly, and even if you fail, CELEBRATE, and consider it an opportunity to grow further!</p>
+        <p>So what are you waiting for?</p>
+        <div class="dropdown">
+            <button onclick="myFunction()" id="dropbtn">Select A Category!</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a onclick="getCategory(event)">general</a>
+                <a href="#" onclick="getCategory(event)">education</a>
+                <a onclick="getCategory(event)">sports_and_outdoors</a>
+                <a onclick="getCategory(event)">collection</a>
+                <a onclick="getCategory(event)">competition</a>
+            </div>
+
+        </div>
+        <h1 id="categorypicked"> <h1>
+
+                <button id="button1">Generate a hobby!</button>
+
+        
+                <a id="link" href=""><h1 id="hobby"> </h1></a>
+                    
+      
+    </div>
+</body>
+
+</html>

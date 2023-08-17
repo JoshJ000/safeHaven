@@ -1,0 +1,134 @@
+body {
+    background-image: url('images/island.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    border-radius: 20px;
+    border-style: groove;
+    border-width: 10px;
+    padding: 5px;
+    margin: 20px;
+}
+
+p {
+    text-align: center;
+    top: 0px;
+}
+
+#parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction:column;
+}
+
+.img_container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    align-items: center;
+}
+
+.img_container img {
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+#about {
+    width: fit-content;
+    margin-top: 10px;
+    position: fixed;
+    top: 40px;
+    left: 325px;
+}
+
+#test {
+    width: fit-content;
+    margin-top: 10px;
+    position: fixed;
+    left: 800px;
+    top: 100px;
+}
+
+#affirmation {
+    width: fit-content;
+    margin-top: 10px;
+    position: fixed;
+    left: 375px;
+    top: 130px;
+}
+
+#hobby {
+    width: fit-content;
+    margin-top: 10px;
+    position: fixed;
+    left: 225px;
+    bottom: 250px;
+}
+
+#journal {
+    width: fit-content;
+    margin-top: 10px;
+    position: fixed;
+    right: 400px;
+    bottom: 350px;
+}
+
+#chat {
+    width: fit-content;
+    margin-top: 10px;
+    position: fixed;
+    right: 700px;
+    bottom: 200px;
+}
+
+#chairs {
+    width: fit-content;
+    margin-top: 10px;
+    position: fixed;
+    right: 270px;
+    bottom: 100px;
+}
+
+.img_container .category:hover {
+    opacity: 60%;
+}
+
+#nav {
+    width: 200px;
+    height: 60vh;
+    background-color: #ffdfac;
+    border-style: solid;
+    border-color: #964B00;
+    border-width: 5px;
+}
+
+nav h1 {
+    text-align: center;
+}
+
+.legend {
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#button {
+    width: 200px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
