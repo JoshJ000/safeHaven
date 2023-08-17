@@ -2,17 +2,49 @@
 <html lang="en">
 
 <head>
-    <title>Demo Day Project</title>
+    <title>Affirmation Generator</title>
     <script src="affirmations.js" defer></script>
     <link rel="stylesheet" href="affirmations.css">
 </head>
 
-<body>
-    <h1>Affirmations</h1>
-    <button id="submit">Generate</button>
+<body id="affirmation">
+    <div>
+        <a href="index.html"><img src="images/logo.png" id="logo" width="100px"></a>
+    </div>
+    <div id="parent">
+        <h1>Affirmations</h1>
+        <p>Although it may seem like an insignificant action, positive affirmations can change your life.</p>
+        <p>Essentially, when they are repeated and recalled, a positive mindset becomes habitual, even to the</p>
+        <p>point where your mind begins to see life in a completely different lense: a brighter one!</p>
+        <br>
+        <div id="generator">
+            <button class="button" id="submit">Generate an Affirmation!</button>
+            <br>
+            <br>
+            <button class="button" id="save_gen">Save Generated Affirmation!</button>
+            <div id="cardContainer">
 
-    <div id="cardContainer">
+            </div>
+        </div>
 
+        <br>
+        <br>
+
+        <div class="input-container">
+            <label>Write your own affirmation:</label>
+            <input type="text" id="personal" />
+            <button class="button" id="save">Save</button>
+        </div>
+
+        <div id="saved">
+            <div id="personalContainer">
+                <h3>Saved Personal Affirmations</h3>
+
+            </div>
+            <div id="generatedContainer">
+                <h3>Saved Generated Affirmations</h3>
+            </div>
+        </div>
     </div>
 </body>
 

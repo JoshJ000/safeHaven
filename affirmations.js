@@ -11,7 +11,6 @@ const affirmations = [
     "We are all works in progress",
     "You are a capable human",
     "You know more than you think",
-    "10x engineers are a myth",
     "If everything was easy you'd be bored",
     "I admire you for taking this on",
     "You're resourceful and clever",
@@ -47,11 +46,45 @@ const affirmations = [
     "Starting is the most difficult step - but you can do it",
     "Don't forget to enjoy the journey",
     "It's not a mistake, it's a learning opportunity",
+    "Celebrate failure, dare greatly, and tell your story"
 ];
 
 let button = document.getElementById("submit");
-let div = document.getElementById("cardContainer");
+let div1 = document.getElementById("cardContainer");
+let affirmation = document.createElement("p");
 
-button.onclick = function() {
-    console.log(affirmations);
+let save = document.getElementById("save");
+let div3 = document.getElementById("generatedContainer");
+
+let save_gen = document.getElementById("save_gen");
+
+function generateRandomNum() {
+    return Math.floor(Math.random() * affirmations.length);
+}
+
+button.onclick = function () {
+    console.log(affirmations[generateRandomNum()]);
+    affirmation.innerHTML = affirmations[generateRandomNum()] + "!";
+    div1.appendChild(affirmation);
+    affirmation.setAttribute("id","generated");
+}
+
+save.onclick = function () {
+    let div2 = document.getElementById("personalContainer");
+    let input = document.getElementById("personal");
+    let personal_input = document.createElement("p");
+    console.log(input.value);
+    personal_input.innerHTML = input.value;
+    div2.appendChild(personal_input);
+    input.value = "";
+}
+
+save_gen.onclick = function() {
+    let generated = document.getElementById("generated");
+    let affirmation = document.createElement("p");
+    let div3 = document.getElementById("generatedContainer");
+    affirmation.innerHTML = generated.innerHTML;
+
+    div3.appendChild(affirmation);
+    div1.innerHTML = "";
 }

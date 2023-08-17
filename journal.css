@@ -1,0 +1,12 @@
+#logo {
+    margin: 10px;
+    border-style: groove;
+    border-width: 10px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#logo:hover {
+    filter: drop-shadow(5px 5px 10px black);
+    opacity: 0.8;
+}
